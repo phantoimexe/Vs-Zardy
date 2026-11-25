@@ -22,8 +22,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: script run line haha
         run: |
-          cinst neko --version 2.3.0 -y
-          cinst haxe --version 4.1.5 -y
+         choco install neko --version=2.3.0 -y
+         choco install haxe --version=4.1.5 -y
           RefreshEnv
           mkdir "%HAXELIB_ROOT%"
           haxelib setup "%HAXELIB_ROOT%"
